@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>USUARIOS CADASTRADOS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let cadastro of usuarioLista | async">
+<ion-label>{{ cadastro.nome }}</ion-label>
+<ion-label>{{ cadastro.email }}</ion-label>
+
+
+
+</ion-item>
+  </ion-list>
+  <ion-button  expand="full" color="danger"  href="home" > VOLTAR </ion-button>
+
+</ion-content>

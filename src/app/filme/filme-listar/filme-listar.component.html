@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>COMENTARIOS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let filme of filmeLista | async">
+<ion-label>{{ filme.nome }}</ion-label>
+<ion-label>{{ filme.comentario }}</ion-label>
+
+
+
+</ion-item>
+  </ion-list>
+  <ion-button  expand="full" color="danger"  href="home" > VOLTAR </ion-button>
+
+</ion-content>

@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      MARVEL ENCICLOPEDIA
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card >
+  <div class="ion-padding">
+    <h1 class="titulo">LOGIN</h1>
+    <ion-img src="../assets/icon/1200px-MarvelLogo.svg.png"></ion-img>
+
+    <p><b>LOGIN:</b></p>
+    <ion-input [(ngModel)]="valor" placeholder="Nome de Usuario ou Email:">
+      </ion-input>
+      <p><b>SENHA:</b></p>
+    <ion-input type="password"[(ngModel)]="valor2" placeholder="Senha:">
+  </ion-input>
+
+    <ion-button  expand="block" color="danger" href="opçoes">ENTRAR</ion-button>
+
+    <ion-button  expand="block" color="dark" href="cadastrolista" > USUARIOS CADASTRADOS </ion-button>
+    <b>Não possui uma conta?</b> <a href="cadastrosalvar" > CADASTRE-SE</a><br>
+
+</div>
+
+
+
+</ion-card>
+</ion-content>
+
+
+<ion-footer>
+
+</ion-footer>

@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+     MARVEL ENCICLOPEDIA
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-card color="dark">
+  <div class="ion-padding">
+    <ion-img src="../assets/icon/1200px-MarvelLogo.svg.png"></ion-img>
+
+    <h4>DÊ SUA OPINIÃO SOBRE OS FILMES</h4>
+
+        <p><b>FILME:</b></p>
+        <ion-input [(ngModel)]="filme.nome" placeholder="Filme:">
+          </ion-input>
+
+          <p><b>OPINIÃO:</b></p>
+          <ion-textarea [(ngModel)]="filme.comentario" placeholder="Deixe sua opinião:"></ion-textarea>
+
+    <h3></h3>
+    <h3></h3>
+    <ion-button  expand="block" color="danger" (click)= "salvar()" href="filme-listar" > ENVIAR </ion-button>
+
+    <ion-button  expand="block" color="danger"  href="opçoes" > VOLTAR </ion-button>
+
+
+</div>
+</ion-card>
+</ion-content>
