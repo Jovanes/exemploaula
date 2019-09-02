@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cadastro Lista</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let cadastro of Cadastrolista | async">
+<ion-label>{{ cadastro.nome }}</ion-label>
+<ion-label>{{ cadastro.email }}</ion-label>
+<ion-label>{{ cadastro.senha }}</ion-label>
+
+<ion-button  expand="full" color="medium"  href="home" > VOLTAR </ion-button>
+
+</ion-item>
+  </ion-list>
+</ion-content>

@@ -19,6 +19,7 @@ import {FormsModule} from '@angular/forms';
 import {CadastrolistaComponent} from  './componentes/cadastroo/cadastrolista/cadastrolista.component';
 import {FilmeSalvarComponent} from './filme/filme-salvar/filme-salvar.component';
 import {FilmeListarComponent} from './filme/filme-listar/filme-listar.component';
+import { Listar } from './componentes/excluircontato/listar/listar.component';
 
 
 
