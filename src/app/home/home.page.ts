@@ -12,13 +12,8 @@ import { Usuario } from './usuario/usuario';
 export class HomePage {
 
 usuario: Usuario = new Usuario();
-
   constructor(private afAuth: AngularFireAuth, private rota: Router) {}
 
-
-direcionar(){
-this.rota.navigate(['cadastro']);
-  }
 
   logar(){
   this.afAuth.auth.signInWithEmailAndPassword(this.usuario.email, this.usuario.senha).then(
@@ -30,4 +25,11 @@ this.rota.navigate(['cadastro']);
   this.afAuth.auth.signOut();
   this.rota.navigate(['/']);
   }
+
+  redefinir(){
+   alert('verifique o seu e-mail');
+   this.afAuth.auth.sendPasswordResetEmail(this.usuario.email).then(
+     () => alert ('verifique o seu email')); {this.rota.navigate([]);}
+ }
+
 }

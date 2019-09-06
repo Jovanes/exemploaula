@@ -12,19 +12,16 @@
     <h1 class="titulo">LOGIN</h1>
     <ion-img src="../assets/icon/1200px-MarvelLogo.svg.png"></ion-img>
 
-    <p><b>LOGIN:</b></p>
-    <ion-input [(ngModel)]="valor" placeholder="Nome de Usuario ou Email:">
+    <p><b>EMAIL:</b></p>
+    <ion-input [(ngModel)]="usuario.email" placeholder="Email:">
       </ion-input>
       <p><b>SENHA:</b></p>
-    <ion-input type="password"[(ngModel)]="valor2" placeholder="Senha:">
+    <ion-input type="password"[(ngModel)]="usuario.senha" placeholder="Senha:">
   </ion-input>
 
-  <ion-input type="text" name="nome" [(ngModel)]="usuario.email">email</ion-input>
-<ion-input type="password" name="telefone" [(ngModel)]="usuario.senha">senha</ion-input>
-<ion-button (click)="logar()">Acessar</ion-button>
+  <a (click)="redefinir()">Esqueceu a senha?</a><br>
 
-    <ion-button  expand="block" color="danger" href="opçoes">ENTRAR</ion-button>
-
+    <ion-button  (click)="logar()" expand="block" color="danger" href="opçoes">ENTRAR</ion-button>
     <ion-button  expand="block" color="dark" href="cadastrolista" > USUARIOS CADASTRADOS </ion-button>
     <b>Não possui uma conta?</b> <a href="cadastrosalvar" > CADASTRE-SE</a><br>
 

@@ -4,7 +4,7 @@ import { map } from 'rxjs/operators';
 import { AngularFireDatabase } from '@angular/fire/database';
 import { Router } from '@angular/router';
 
-import { Estado } from '../../estado/entidade3/estado';
+import { Estado } from '../../estado/entidade/estado';
 import { Cidade } from '../entidade3/cidade';
 
 @Component({

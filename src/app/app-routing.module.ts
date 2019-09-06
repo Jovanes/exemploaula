@@ -18,7 +18,6 @@ const routes: Routes = [
   {path: 'historia', component: HistoriaComponent},
   {path: 'opçoes', component: OpçoesComponent},
   {path: 'quiz', component: QuizComponent},
-  { path: 'listar', component: Listar },
   {path: 'homemdeferro', component: HomemdeferroComponent},
   {path: 'cadastrolista', component: CadastrolistaComponent},
   {path: 'filme-salvar', component: FilmeSalvarComponent},
