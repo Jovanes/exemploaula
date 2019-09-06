@@ -14,7 +14,6 @@ import { AppRoutingModule } from './app-routing.module';
 import {CadastroComponent} from  './componentes/cadastroo/cadastrosalvar/cadastrosalvar.component';
 import {HistoriaComponent} from  './componentes/historia/historia.component';
 import {OpçoesComponent} from  './componentes/opçoes/opçoes.component';
-import {QuizComponent} from  './componentes/quiz/quiz.component';
 import {FormsModule} from '@angular/forms';
 import {CadastrolistaComponent} from  './componentes/cadastroo/cadastrolista/cadastrolista.component';
 import {FilmeSalvarComponent} from './filme/filme-salvar/filme-salvar.component';
@@ -27,7 +26,7 @@ import {HomemdeferroComponent} from  './componentes/homemdeferro/homemdeferro.co
 
 
 @NgModule({
-  declarations: [AppComponent,CadastroComponent,HistoriaComponent,OpçoesComponent,QuizComponent,HomemdeferroComponent,CadastrolistaComponent,FilmeSalvarComponent, FilmeListarComponent],
+  declarations: [AppComponent,CadastroComponent,HistoriaComponent,OpçoesComponent,HomemdeferroComponent,CadastrolistaComponent,FilmeSalvarComponent, FilmeListarComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule, AngularFireDatabaseModule,
 AngularFireModule.initializeApp({

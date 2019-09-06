@@ -24,4 +24,11 @@ this.filmeLista = this.fire.list<Filme>('comentario')
 
   ngOnInit() {}
 
+
+
+  excluir(key){
+    this.fire.list('comentario').remove(key);
+    alert("excluido");
+  }
+
 }

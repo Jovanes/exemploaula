@@ -24,7 +24,7 @@ export class CadastroComponent implements OnInit {
 
   salvar(){
     this.fire.list('usuario').push(this.cadastro);
-    this.cadastro = new Cadastro();
+      this.cadastro = new Cadastro();
     this.angularfireauth.auth.createUserWithEmailAndPassword(this.cadastro.email, this.cadastro.senha).then(
     () => { this.rota.navigate(['cadastrolista']); }
     ).catch( (erro) => alert('erro') );
